@@ -1,0 +1,48 @@
+.fzdm{
+	display: flex;
+	justify-content: space-between;
+}
+.znr h1{
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+.fzdm{
+	margin-bottom: 40px;
+}
+.fzdwz p{
+	width: 590px;
+	font-size: 14px;
+	line-height: 22px;
+	padding: 5px 0;
+	text-indent: 2em;
+}
+.wh9{
+	width: 992px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+.wh{
+	width: 220px;
+	height: 150px;
+	padding: 25px 40px;
+	border: 1px solid #d9261c;
+	margin-bottom: 40px;
+	transition: all 0.5s;
+}
+.wh h2{
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.wh p{
+	font-size: 14px;
+	text-align: center;
+	line-height: 22px;
+}
+.wh:hover{
+	background-color: #d9261c;
+	color: #fff;
+}

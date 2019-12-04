@@ -1,0 +1,268 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "Aria" "微软雅黑";
+}
+body{
+	background-color: #f2f2f2;
+}
+ul{
+	list-style: none;
+}
+a{
+	color: #000;
+	text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+.center{
+	width: 1400px;
+	margin: 0 auto;
+}
+.bt{
+	font-size: 24px;
+	text-align: center;
+}
+/*导航*/
+nav{
+	float: left;
+	width: 100%;
+	height: 100px;
+	min-width: 1400px;
+	background-color: rgba(255,255,255,0.5);
+	position: absolute;
+	z-index: 99;
+}
+nav .center{
+	display: flex;
+	justify-content: space-between;
+}
+#logo{
+	margin: 10px 0;
+	margin-left: 20px;
+	display: block;
+}
+.Ss{
+	overflow: hidden;
+	width: 15px;
+	line-height: 16px;
+	height: 16px;
+	margin-top: 42px;
+	display: block;
+}
+.Ss:hover img{
+	left: -15px;
+}
+.Ss img{
+	position: relative;
+	border-right: 15px solid transparent;/*transparent完全透明的单词*/
+	filter:drop-shadow(15px 0 #d9261c);/*投影出一个颜色叠加的图像，可用于png图标变色*/
+}
+nav ul{
+	width: 640px;
+	display: flex;
+	justify-content: space-between;
+}
+nav ul li a{
+	line-height: 100px;
+	font-size: 16px;
+}
+nav ul li a:hover{
+	color: #d9261c;
+}
+nav ul li a.navxz{
+	color: #d9261c;
+}
+/*banner*/
+#banner{
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	min-width: 1400px;
+	height: 600px;
+	overflow: hidden;
+	text-align: center;
+}
+#banner .banimg{
+	position: inherit;
+	left: 0;
+	top: 0;
+}
+#banner .banimg img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+}
+#banner .banwz{
+	position: relative;
+	top: 45%;
+	left: 136px;
+	z-index: 2;
+	color: #d9261c;
+	text-align: left;
+	line-height: 50px;
+}
+#banner .banwz h1{
+	font-size: 30px;
+}
+#banner .banwz h2{
+	font-size: 24px;
+}
+/*面包屑导航*/
+.mbxnav{
+	font-size: 14px;
+	color: #333;
+	text-align: right;
+	border-bottom: 1px solid #ccc;
+	padding: 15px 0;
+	margin-bottom: 20px;
+}
+.mbxnav a{
+	font-size: 14px;
+	color: #333;
+}
+/*子页内容*/
+#zznr{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.znr{
+	width: 1110px;
+	padding-left: 40px;
+	margin-bottom: 40px;
+}
+/*子导航*/
+.znav{
+	width: 250px;
+	text-align: center;
+}
+.znav h1{
+	background-color: #ff2c21;
+	color: #fff;
+	font-size: 24px;
+	padding: 10px 0;
+}
+.znav ul{
+	text-align: left;
+}
+.znav ul li a{
+	display: block;
+	font-size: 16px;
+	padding: 10px 0;
+	padding-left: 77px;
+	color: #fff;
+
+}
+.znav ul li a:hover{
+	background-color: #d9261c;
+}
+.znavxz{
+	background-color: #d9261c;
+}
+.znav ul li{
+	background-color: #801611;
+	opacity:0;
+	z-index: -1;
+}
+.znav ul li:nth-of-type(1){
+	animation: zdhdh 0.5s forwards;
+}
+.znav ul li:nth-of-type(2){
+	animation: zdhdh 0.5s 0.5s forwards;
+}
+.znav ul li:nth-of-type(3){
+	animation: zdhdh 0.5s 1s forwards;
+}
+@keyframes zdhdh{
+	from{ opacity:0; transform: translateY(-100%);}
+	to{ opacity:1; transform: translateY(0px);}
+}
+/*翻页*/
+.fy{
+	width: 520px;
+	margin: 0 auto;
+}
+.fy span,.fy a{
+	width: 80px;
+	height: 40px;
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	font-size: 14px;
+	float: left;
+	margin: 0 10px;
+	background-color: #e6e6e6;
+}
+.fy a.sz{
+	width: 40px;
+}
+.fy span{
+	color: #b2b2b2;
+}
+.fy .fyxz{
+	background-color: #d9261c;
+	color: #fff;
+}
+.fy a:hover{
+	background-color: #d9261c;
+	color: #fff;
+}
+/*页脚*/
+footer{
+	width: 100%;
+	height: 130px;
+	background-color: #d9261c;
+	border-bottom: 20px solid #801611;
+	
+}
+footer .center{
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;/*两边对其*/
+	flex-wrap:nowrap;/*超出宽度不允许换行*/
+	padding-top: 20px;
+}
+#footer_nav ul{
+	overflow: hidden;
+}
+#footer_nav ul li{
+	float: left;
+	color: #fff;
+}
+#footer_nav ul li a{
+	color: #fff;
+	margin: 15px;
+	font-size: 14px;
+}
+.hx{
+	width: 100%;
+	height: 1px;
+	background-color: #ccc;
+	margin: 20px 0;
+	margin-left: 10px;
+}
+.fxz{
+	color:#b2b2b2;
+	font-size: 12px;
+	margin-left: 10px;
+	line-height: 20px;
+}
+#footer_lxwm{
+	width: 350px;
+}
+#footer_lxwm .flx{
+	margin-left: 10px;
+	color: #fff;
+	font-size: 14px;
+}
+#footer_lxwm span{
+	font-size: 12px;
+}
+#footer_lxwm .hx{
+	margin: 10px 0;
+	margin-left: 10px;
+}

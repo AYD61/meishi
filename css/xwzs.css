@@ -1,0 +1,64 @@
+.xwnr{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+.xwwz{
+	width: 560px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.xwwz h1{
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 5px;
+}
+.xwwz p{
+	font-size: 14px;
+	text-indent: 2em;
+	line-height: 22px;
+}
+.xwwz span{
+	font-size: 14px;
+	line-height: 22px;
+	margin-top: 10px;
+	display: block;
+}
+.xwwz span.gdxx{
+	width: 90px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border: 1px solid #b2b2b2;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	transition: all 0.3s;
+}
+.xwwz span.gdxx:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #d9261c;
+	opacity: 0;
+	transition: all 0.3s;
+	transform: scale(0.7);
+	z-index: -1;
+}
+.xwnr:hover h1{
+	color: #d9261c;
+}
+.xwnr:hover .gdxx{
+	/*background-color: #d9261c;*/
+	color: #fff;
+}
+.xwnr:hover .gdxx:after{
+	width: 100%;
+	height: 100%;
+	transform: scale(1);
+	opacity: 1;
+}

@@ -1,0 +1,18 @@
+.znr{
+	display: flex;
+	justify-content: space-between;
+}
+.znr h1{
+	font-size: 24px;
+}
+.znr p{
+	font-size: 14px;
+	line-height: 22px;
+	text-indent: 2em;
+	margin: 10px 0;
+}
+.lxwz{
+	width: 410px;
+}
+.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
